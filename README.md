@@ -16,6 +16,7 @@ Je compte utiliser:
 - De la POO pour les roles des joueurs 
 - Une file pour la liste des coups durant les echanges
 - Des modules pour l'interface graphique 
+
 GOATED ACE
 ![yuji-nishida](https://user-images.githubusercontent.com/90553363/161496662-5d67a0a9-e7c1-4682-a2ea-d844d848c692.gif)
 
