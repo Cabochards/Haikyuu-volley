@@ -3,6 +3,9 @@ Je veux creer un simulateur de volley qui reproduit des echanges de vrai match a
 Mes objectifs :
 - Faire un code qui marche esthethique et pratique
 - Automatiser certaines choses ( ex : systeme de rotation)
+
+![technical info](https://user-images.githubusercontent.com/90553363/161491710-b9715f9f-f026-456c-9fb0-237d7f091415.gif)
+
 - Une certes de log qui cree une liste de tout les coups durant un echange 
 - Bonus: Faire une vrai appli sans passer par un ide
 
