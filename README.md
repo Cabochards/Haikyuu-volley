@@ -11,4 +11,4 @@ Mes objectifs :
 Je compte utiliser:
 - De la POO pour les roles des joueurs 
 - Une file pour la liste des coups
-- Des modules pour l'interface 
+- Des modules pour l'interface graphique
