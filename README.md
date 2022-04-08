@@ -27,20 +27,24 @@ GOATED ACE
 Prototypage :
 
 classe terrain(): 
+    
     def creer_terrain():
     def filet():
     defcamp droite():
     def camp_gauche():
 
 class libero():
+    
     def reception():
     def passe():
         
 class joueur():
+    
     def reception():
     def passe():
     def attaque():
     def smash()
     
 class balle():
+    
     def toucher()
