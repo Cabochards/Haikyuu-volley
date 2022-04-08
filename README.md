@@ -1,6 +1,6 @@
 # Haikyuu-volley
 
-"Deux équipes separées par un filet se renvoient la balle d'un cote a l autre du terrain la balle ne doit pas toucher le sol elle ne peut etre porté une fois qu elle est en l air une equipe n a droit qu a trois touches pour se connecter et passer la balle de la reception a l attaque" Haruichi Furudate
+"Deux équipes separées par un filet se renvoient la balle d'un cote à l'autre du terrain la balle ne doit pas toucher le sol elle ne peut être porté une fois qu'elle est en l'air une equipe n'a droit qu a trois touches pour se connecter et passer la balle de la réception a l'attaque" Haruichi Furudate
 
 Je veux creer un simulateur de volley qui reproduit des echanges de vrai match afin de pouvoir mieux etudier les strategies en jeu.
 Mes objectifs :
