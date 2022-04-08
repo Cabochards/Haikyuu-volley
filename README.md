@@ -16,7 +16,7 @@ Mes objectifs :
 ![image](https://user-images.githubusercontent.com/90553363/161490865-7f449dd0-4710-4031-af1f-b97a8d57455f.png)
 
 Je compte utiliser:
--Tkinter ou Pygame
+- Tkinter ou Pygame
 - De la POO pour les roles des joueurs 
 - Une file pour la liste des coups durant les echanges
 - Des modules pour l'interface graphique 
