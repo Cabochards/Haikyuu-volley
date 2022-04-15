@@ -6,6 +6,7 @@
 
 14/04/2022
 
+-Mon systeme de rotation avait des problemes du au fait que mes clases etaient mal definis
 -J ai du refaire la redefinition des classes (du a des problemes d affichage des joueurs) et de leurs methodes.
 =Les assertions des classes 
 -Entrain de refaire l affichage des joueurs
