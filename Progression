@@ -3,3 +3,10 @@
 - Mise en place de pygame
 - Mise en place des joueurs sur le terrain
 - Tentative de faire une rotation des joueurs 
+
+14/04/2022
+
+-J ai du refaire la redefinition des classes (du a des problemes d affichage des joueurs) et de leurs methodes.
+=Les assertions des classes 
+-Entrain de refaire l affichage des joueurs
+
