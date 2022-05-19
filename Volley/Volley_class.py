@@ -1,288 +1,85 @@
-import pygame
+import pygame 
 import random
 
-"""""
-class terrain():
+'''
+class Terrain(object):
+    
+    nom = ""
+    joueur_sur_terrain = []
     
     
-    On cree un terrain rectangle avec:
-    -La ligne de service
-    -Les lignes d attaques dans les quelles liberos ne peuvent pas attaquer
-    
-    def zone_gauche():
-        self.x=0
-        self.y=0 
-"""
+    def __init__(self, name):
+        self.name = name
 
-class libero():
-    """
-    On cree une classe pour le libero :
-    -Sa position initiale des le debut du match
-    -Il peut se faire remplacer par le middle blocker
-    -Il ne peut pas faire de coup offensif dans la zone d'attaque
-    -Il ne peut pas bloquer, sevir et smasher
-    """
-    def __init__(self):
+    def joueurs_sur_terrain(self, player):
+        self.joueur_sur_terrain.append(player)
+    
+    def display(self, scr):
+        for player in self.joueur_sur_terrain:
+            pygame.draw.circle(scr, player.equipe,(int(player.position[0]), int(player.position[1])), player.taille)
+'''      
         
-        self.touche = 0
-        self.image = pygame.image.load("images\libero_camp1.png")
+
+class Joueurs():
+    
+
+    
+
+    def __init__(self):
+        self.role = ""
+        self.image = pygame.image.load("images/circle-icon-11.jpg")
         self.rect= self.image.get_rect()
         self.rect.x= 480
         self.rect.y= 345
     
-    def reception(self,ball):
-        """
-        """
-    
-    def passe(self,ball):
-        """
-        """
-class libero2():
-    
-    def __init__(self):
+    nombre = 7
+
+    def Apparait(self):
         
-        self.touche = 0
-        self.image = pygame.image.load("images\libero_camp2.png")
-        self.rect= self.image.get_rect()
-        self.rect.x = 800
-        self.rect.y = 345
-        
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-
-class middble_blocker():
-
-    """
-     On cree une classe pour le middle blocher :
-    -Sa position initiale des le debut du match
-    -Il peut se faire remplacer par le libero
-    -Il peut faire des coup offensif dans la zone d'attaque
-    -Il peut bloquer, receptionner, passer servir et smasher
-    """
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class middble_blocker2():
-    
-    """
-     On cree une classe pour le middle blocher :
-    -Sa position initiale des le debut du match
-    -Il peut se faire remplacer par le libero
-    -Il peut faire des coup offensif dans la zone d'attaque
-    -Il peut bloquer, receptionner, passer servir et smasher
-    """
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class setter():
-    
-    """
-     On cree une classe pour le passeur :
-    -Sa position initiale des le debut du match
-    -Il peut faire des coup offensif dans la zone d'attaque
-    -Il peut bloquer, receptionner, passer servir et smasher
-    """
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class setter2():
-    
-
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-    
-
-
-class wingspiker():
-    
-    """
-     On cree une classe pour les ailiers:
-    -Sa position initiale des le debut du match
-    -Il peut faire des coup offensif dans la zone d'attaque
-    -Il peut bloquer, receptionner, passer servir et smasher
-    """
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class wingspiker2():
-    
-    """
-     On cree une classe pour les ailiers:
-    -Sa position initiale des le debut du match
-    -Il peut faire des coup offensif dans la zone d'attaque
-    -Il peut bloquer, receptionner, passer servir et smasher
-    """
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class oh():
-    
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-class oh2():
-    
-    def __init__(self):
-        
-        self.touche = 0
-        self.image = pygame.image.load("images\player_camp1.png")
-        self.rect = self.image.get_rect()
-        self.rect.x = 480
-        self.rect.y = 45
-    
-    def reception(self,ball):
-        """
-        """
-    def passe(self,ball):
-        """
-        """
-    def attaque(self,ball):
-        """
-        """
-    def smash(self,ball):
-        """
-        """
-
-
-class balle():
-    
-    def __init__(self) :
-        
-        self.rect= self.image.get_rect()
-        self.rect.x= 480
-        self.rect.y= 345
-        self.image= pygame.image.load("images/ball.jpg")
+        positions = [  (480,345), (140,450),(20,362),(280,370),(710,410) ] #on definit une liste de positions
+        self.image= pygame.image.load("images/circle-icon-11.jpg") #taupe 1 hit qui apparait a un lieu de base
+        nid= positions[1]
+        self.rect.x= nid[0]  
+        self.rect.y= nid[1]
       
-    def possesion():
-        """
-        """
+
+
+
+
+
+pygame.init()
+
+vitesse=pygame.time.Clock()#pour les fps
+#creation de la taille de la fenetre 
+
+screen=pygame.display.set_mode((1000,700))
+pygame.display.set_caption('Chasse-taupe')
+
+
+Icone = pygame.image.load('images/ball.jpg')
+pygame.display.set_icon(Icone)
+
+background= pygame.image.load('images/bg.jpg')
+background_rect= background.get_rect()
+
+Sur_le_terrain = []
+
+for i in range(Joueurs.nombre):
+    Players= Joueurs()
+    Sur_le_terrain.append(Players)
+
+keep = True
+while keep:
+    
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            keep = False
+    
+        
+    screen.blit(background,(0,0))
+
+   
+    pygame.display.update()
+    vitesse.tick(200)
+
+pygame.quit()
